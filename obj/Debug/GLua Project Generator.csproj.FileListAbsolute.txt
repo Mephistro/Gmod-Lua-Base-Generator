@@ -29,3 +29,34 @@ E:\Dev\csharp\GLua Project Generator\bin\Debug\Gmod Lua Base Generator.pdb
 E:\Dev\csharp\GLua Project Generator\obj\Debug\Gmod_Lua_Base_Generator.Properties.Resources.resources
 E:\Dev\csharp\GLua Project Generator\obj\Debug\Gmod Lua Base Generator.exe
 E:\Dev\csharp\GLua Project Generator\obj\Debug\Gmod Lua Base Generator.pdb
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\Gmod Lua Base Generator.exe.config
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\Gmod Lua Base Generator.exe
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\Gmod Lua Base Generator.pdb
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Buffers.dll
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Memory.dll
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Numerics.Vectors.dll
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Text.Encodings.Web.dll
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Text.Json.dll
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.ValueTuple.dll
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Buffers.xml
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Memory.xml
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Numerics.Vectors.xml
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Text.Encodings.Web.xml
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Text.Json.xml
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Dev\csharp\Gmod Lua Base Generator\bin\Debug\System.ValueTuple.xml
+E:\Dev\csharp\Gmod Lua Base Generator\obj\Debug\GLua Project Generator.csproj.AssemblyReference.cache
+E:\Dev\csharp\Gmod Lua Base Generator\obj\Debug\GLua Project Generator.csproj.SuggestedBindingRedirects.cache
+E:\Dev\csharp\Gmod Lua Base Generator\obj\Debug\GLua_Project_Generator.Form1.resources
+E:\Dev\csharp\Gmod Lua Base Generator\obj\Debug\GLua_Project_Generator.Form2.resources
+E:\Dev\csharp\Gmod Lua Base Generator\obj\Debug\Gmod_Lua_Base_Generator.Properties.Resources.resources
+E:\Dev\csharp\Gmod Lua Base Generator\obj\Debug\GLua Project Generator.csproj.GenerateResource.cache
+E:\Dev\csharp\Gmod Lua Base Generator\obj\Debug\GLua Project Generator.csproj.CoreCompileInputs.cache
+E:\Dev\csharp\Gmod Lua Base Generator\obj\Debug\GLua Project Generator.csproj.CopyComplete
+E:\Dev\csharp\Gmod Lua Base Generator\obj\Debug\Gmod Lua Base Generator.exe
+E:\Dev\csharp\Gmod Lua Base Generator\obj\Debug\Gmod Lua Base Generator.pdb
