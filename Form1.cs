@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Diagnostics;
+using System.Reflection;
 
 namespace GLua_Project_Generator
 {
@@ -32,6 +34,12 @@ namespace GLua_Project_Generator
         public static TreeNode EntitiesRoot;
         public static TreeNode VguiRoot;
         public static TreeNode WeaponsRoot;
+
+        DirectoryInfo RootFolder;
+
+        public static string folderPath;
+        public static Process VSC;
+
 
         public class data
         {
@@ -65,7 +73,7 @@ namespace GLua_Project_Generator
             Root.ExpandAll();
 
             LuaRoot = Root.Nodes[0];
-            
+
             CheckName();
 
         }
@@ -74,7 +82,7 @@ namespace GLua_Project_Generator
         {
             if (textBox2.Text.Length <= 0)
             {
-                checkBox1.Enabled = false;
+                //checkBox1.Enabled = false;
                 checkedListBox1.Enabled = false;
                 checkedListBox2.Enabled = false;
 
@@ -90,7 +98,7 @@ namespace GLua_Project_Generator
                 Root.Expand();
                 Root.Text = textBox2.Text;
 
-                checkBox1.Enabled = true;
+                //checkBox1.Enabled = true;
                 checkedListBox1.Enabled = true;
                 checkedListBox2.Enabled = true;
 
@@ -337,7 +345,21 @@ namespace GLua_Project_Generator
         {
             if (textBox1.Text.Length > 0) 
             {
-                DirectoryInfo RootFolder = Directory.CreateDirectory(textBox1.Text +"\\"+ textBox2.Text);
+                if (Directory.Exists(textBox1.Text + "\\" + textBox2.Text))
+                {
+                    DialogResult msgbox = MessageBox.Show("This Folder already exists.\nDo you wish to overwrite it ?", "ERROR", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                    if(msgbox == DialogResult.Yes)
+                    {
+                        Directory.Delete(textBox1.Text + "\\" + textBox2.Text, true);
+                        RootFolder = Directory.CreateDirectory(textBox1.Text + "\\" + textBox2.Text);
+                    } else
+                    {
+                        MessageBox.Show("Please, change your folder name to continue.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+                }
+
                 if (RootFolder.Exists)
                 {
                     DirectoryInfo LuaRootFolder = Directory.CreateDirectory(RootFolder.FullName + "\\lua");
@@ -476,11 +498,44 @@ namespace GLua_Project_Generator
                     }
 
                 }
+
+                folderPath = RootFolder.FullName;
+                button5.Enabled = true;
+
                 MessageBox.Show("Successfully generated your project files!!", "Success!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             } else
             {
                 MessageBox.Show("Please show a path before generating your project files!", "Error generating", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+            ProcessStartInfo startInfo = new ProcessStartInfo
+            {
+                FileName = "code",
+                Arguments = $"\"{folderPath}\"",
+                UseShellExecute = true,
+                WindowStyle = ProcessWindowStyle.Hidden
+            };
+
+            try
+            {
+                VSC = Process.Start(startInfo);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}","Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+                throw;
+            }
+        }
+
+
+
+
+
+
     }
 }

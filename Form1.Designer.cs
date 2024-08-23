@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("ProjectName");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("ProjectName");
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -57,8 +59,7 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -95,6 +96,17 @@
             this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
             this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(567, 9);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(140, 15);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "Made By Mephisto | v1.0";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -124,6 +136,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.textBox5);
@@ -149,6 +162,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(509, 358);
             this.panel2.TabIndex = 2;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(64, 88);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(149, 13);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "( press enter to confirm name )";
             // 
             // label13
             // 
@@ -425,10 +448,10 @@
             this.treeView1.ForeColor = System.Drawing.Color.White;
             this.treeView1.Location = new System.Drawing.Point(6, 25);
             this.treeView1.Name = "treeView1";
-            treeNode8.Name = "Root";
-            treeNode8.Text = "ProjectName";
+            treeNode2.Name = "Root";
+            treeNode2.Text = "ProjectName";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode8});
+            treeNode2});
             this.treeView1.Size = new System.Drawing.Size(235, 330);
             this.treeView1.TabIndex = 5;
             // 
@@ -453,26 +476,20 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Preview Folder Hierarchy";
             // 
-            // label10
+            // button5
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(64, 88);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(149, 13);
-            this.label10.TabIndex = 22;
-            this.label10.Text = "( press enter to confirm name )";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Caladea", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(567, 9);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(140, 15);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "Made By Mephisto | v1.0";
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(15)))), ((int)(((byte)(77)))));
+            this.button5.Enabled = false;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(229, 329);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(153, 23);
+            this.button5.TabIndex = 23;
+            this.button5.Text = "Open in visual studio code";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
@@ -533,6 +550,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button5;
     }
 }
 
