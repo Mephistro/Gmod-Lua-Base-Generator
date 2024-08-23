@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("ProjectName");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("ProjectName");
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
@@ -359,6 +359,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.checkBox1.Enabled = false;
             this.checkBox1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(8)))), ((int)(((byte)(46)))));
             this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.checkBox1.ForeColor = System.Drawing.Color.White;
@@ -448,10 +449,10 @@
             this.treeView1.ForeColor = System.Drawing.Color.White;
             this.treeView1.Location = new System.Drawing.Point(6, 25);
             this.treeView1.Name = "treeView1";
-            treeNode2.Name = "Root";
-            treeNode2.Text = "ProjectName";
+            treeNode3.Name = "Root";
+            treeNode3.Text = "ProjectName";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode2});
+            treeNode3});
             this.treeView1.Size = new System.Drawing.Size(235, 330);
             this.treeView1.TabIndex = 5;
             // 
