@@ -2,3 +2,4 @@
 /bin
 /.vs
 /obj/Release
+/packages/Fody.6.5.5
