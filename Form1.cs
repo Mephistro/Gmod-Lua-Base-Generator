@@ -358,7 +358,7 @@ namespace GLua_Project_Generator
                         MessageBox.Show("Please, change your folder name to continue.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
-                }
+                } else { RootFolder = Directory.CreateDirectory(textBox1.Text + "\\" + textBox2.Text); }
 
                 if (RootFolder.Exists)
                 {
